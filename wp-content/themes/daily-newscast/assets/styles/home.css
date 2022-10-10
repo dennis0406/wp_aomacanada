@@ -1,0 +1,71 @@
+:root {
+  --cl-partner: #c02a29;
+}
+.header__container--custom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header__partner, .header__banner {
+  width: 80vw;
+}
+.header__partner ul {
+  background-color: #faf9fa;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: row;
+  list-style: none;
+}
+.header__banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__partner ul li {
+  padding: 5px 8px;
+}
+.header__partner ul li a {
+  color: var(--cl-partner);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.header__partner ul li {
+  border-right: 1px solid black;
+}
+
+.header__partner ul li:last-child {
+  border-right: none;
+}
+.header__banner__logo{
+  width: 150px;
+  height: 50px;
+  object-fit: cover;
+}
+.header__banner__player{
+  border-radius: 10px;
+  padding: 10px ;
+  border: 1px solid black;
+  color: var(--cl-partner);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__banner__player ion-icon{
+  font-size: 35px;
+}
+.header__banner__socials a ion-icon{
+  color: var(--cl-icon);
+  font-size: 35px;
+}
+.header__banner__search__field{
+  padding: 0 10px !important;
+}
+.header__banner__language{
+  font-weight: bold;
+  color: #2657af;
+}
