@@ -1,0 +1,30 @@
+.header{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container{
+  width: 80vw;
+}
+
+.header--top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header--top--left, .header--top--right, .international, .tools{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+.header--top--left a{
+  border-right: 1px solid black;
+  padding-right: 20px;
+}
+
+.international img{
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+}

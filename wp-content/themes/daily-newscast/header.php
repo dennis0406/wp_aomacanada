@@ -43,3 +43,4 @@ if ( 1 == $enable_preloader ):
     <div id="content" class="container">
 <?php
     do_action('covernews_action_get_breadcrumb');
+    get_template_part('product-list', 'none');

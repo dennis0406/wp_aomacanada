@@ -94,21 +94,30 @@
             </div>
             <div class="header__banner">
                 <a class="header__banner__logo" href="<?php echo get_home_url(); ?>"><img src="https://vov.vn/themes/custom/vovvn/logo.svg" alt="logo"></a>
-                <p class="header__banner__date"><?php echo get_the_date(); ?></p>
+                <p class="header__banner__date"><?php echo date('l, jS \of F Y'); ?></p>
                 <div class="header__banner__socials">
-                    <a href="#social"><ion-icon style="--cl-icon: #1877f2" name="logo-facebook"></ion-icon></a>
-                    <a href="#social"><ion-icon style="--cl-icon: #2a0d21" name="logo-tiktok"></ion-icon></a>
-                    <a href="#social"><ion-icon style="--cl-icon: #f00" name="logo-youtube"></ion-icon></a>
-                    <a href="#social"><ion-icon style="--cl-icon: #c41f26" name="logo-pinterest"></ion-icon></a>
+                    <a href="#social">
+                        <ion-icon style="--cl-icon: #1877f2" name="logo-facebook"></ion-icon>
+                    </a>
+                    <a href="#social">
+                        <ion-icon style="--cl-icon: #2a0d21" name="logo-tiktok"></ion-icon>
+                    </a>
+                    <a href="#social">
+                        <ion-icon style="--cl-icon: #f00" name="logo-youtube"></ion-icon>
+                    </a>
+                    <a href="#social">
+                        <ion-icon style="--cl-icon: #c41f26" name="logo-pinterest"></ion-icon>
+                    </a>
                 </div>
                 <a class="header__banner__player" href="#player">Nghe & Xem <ion-icon name="play-circle-outline"></ion-icon></a>
                 <a href="#language" class="header__banner__language">Language</a>
                 <form action="" method="get" class="header__form__search">
-                <input type="text" class="header__banner__search__field" name="s">
-                <button type="submit"><ion-icon class="header__banner__search__icon" name="search-outline"></ion-icon></button>
+                    <input type="text" class="header__banner__search__field" name="s">
+                    <button class="header__banner__search__btn" type="submit">
+                        <ion-icon class="header__banner__search__icon" name="search-outline"></ion-icon>
+                    </button>
                 </form>
             </div>
-
         </div>
         <!-- ========== VOV header Section ========== -->
         <div class="masthead-banner <?php echo esc_attr($class); ?>" data-background="<?php echo esc_attr($background); ?>">
@@ -158,11 +167,6 @@
                 <div class="row">
                     <div class="kol-12">
                         <div class="navigation-container">
-
-
-
-
-
                             <button class="toggle-menu" aria-controls="primary-menu" aria-expanded="false">
                                 <span class="screen-reader-text"><?php esc_html_e('Primary Menu', 'covernews'); ?></span>
                                 <i class="ham"></i>

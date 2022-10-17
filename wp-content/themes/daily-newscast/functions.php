@@ -21,8 +21,6 @@ function daily_newscast_enqueue_child_styles() {
         get_stylesheet_directory_uri() . '/style.css',
         array( 'bootstrap', $parent_style ),
         wp_get_theme()->get('Version') );
-
-
 }
 add_action( 'wp_enqueue_scripts', 'daily_newscast_enqueue_child_styles' );
 
