@@ -133,7 +133,7 @@
   content: '$';
   color: inherit;
 }
-body a:hover, body a:focus, body a:active, body .figure-categories-2 .cat-links a{
+.product__category{
   color: #fff !important;
 }
 @media (max-width: 1020px) and (min-width: 676px) {
